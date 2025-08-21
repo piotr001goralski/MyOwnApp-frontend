@@ -78,7 +78,7 @@ export default function SignInPage() {
                 .then(() => {
                     setSignInError(false);
                     setTimeout(() => {
-                        location.reload();
+                        location.replace("/profile");
                     }, 1500);
                 })
                 .catch(() =>  setSignInError(true));
